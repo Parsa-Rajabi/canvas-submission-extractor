@@ -17,7 +17,7 @@ This script looks up student Canvas IDs from a file and copy submission files wi
 3. Find exercise that needs to be marked
 4. Select the triple dots beside it (screen below)
 5. Select Download Submission
-6. 
+6. Rename to `submissions`
 
 ![image](https://user-images.githubusercontent.com/34695166/133945658-82f96a13-7103-4fc3-8032-ca6e9124dd48.png)
 
