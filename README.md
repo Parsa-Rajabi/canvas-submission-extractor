@@ -19,7 +19,7 @@ This script looks up student Canvas IDs from a file and copy submission files wi
 5. Select Download Submission
 6. 
 
-![image](https://user-images.githubusercontent.com/34695166/133945563-2f1f62cd-f057-4d2c-8b26-0bad9bb459be.png)
+![image](https://user-images.githubusercontent.com/34695166/133945658-82f96a13-7103-4fc3-8032-ca6e9124dd48.png)
 
 ### Group CSV
 1. Canvas Course side bar
