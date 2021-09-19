@@ -10,27 +10,35 @@ This script looks up student Canvas IDs from a file and copy submission files wi
 4. open the script with IDLE, update line 15 to match with the group you are marking
 5. run the script, a directory with the group name will be created and all the files that needed to be marked will be copied there
 
-## Constants 
-Name of the group the TA needs to mark format is "Marking Group X", replace X with a number
+## How to Download Group CSV + Submissions
+### Submissions
+1. Canvas Course
+2. Grade
+3. Find exercise that needs to be marked
+4. Select the triple dots beside it (screen below)
+5. Select Download Submission
+6. 
 
-```
-groupNeedtoBeMarked = "Marking Group 2"
-```
+![image](https://user-images.githubusercontent.com/34695166/133945563-2f1f62cd-f057-4d2c-8b26-0bad9bb459be.png)
 
-Name of the file storing the group info:
+### Group CSV
 1. Canvas Course side bar
 2. People
 3. Select the group tab "For Marking Purposes Only" 
 4. Select "+ Import" 
 5. Download Course Roster CVS from the bottom
+6. Rename it to `CMPT 120 - Group Export.csv`
 
-Ensure you name the file the same as the following: 
+![image](https://user-images.githubusercontent.com/34695166/133945597-a07e2d3a-4c5f-4bcf-be6b-10cbf671f08d.png)
 
+
+## Constants 
+Name of the group the TA needs to mark format is "Marking Group X", replace X with a number
 ```
-groupInfoFilename = "CMPT 120 - Group Export.csv"
+groupNeedtoBeMarked = "Marking Group 2"
 ```
 
 ## Credits
-- Author: Dr. Victor Cheung - September 2021
-- Edits: Parsa Rajabi - September 2021
+- Author: Dr. Victor Cheung
+- Documenattion + Updates: Parsa Rajabi 
 
