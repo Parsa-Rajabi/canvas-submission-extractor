@@ -35,7 +35,7 @@ if os.path.exists(destDir) :
 
 else :
     # create the directory to store the extracted files
-    os.makedirs(destDir, True)
+    os.makedirs(destDir, mode = 0o777, exist_ok = True)
 
     ### The actual work ###
     # get the list of all files and directories in the submission directory
