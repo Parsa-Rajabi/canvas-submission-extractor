@@ -25,4 +25,5 @@ groupInfoFilename = "CMPT 120 - Group Export.csv"
 
 ## Credits
 Author: Dr. Victor Cheung - September 2021
+Edits: Parsa Rajabi - September 2021
 
