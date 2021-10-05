@@ -9,10 +9,13 @@
 import os
 import shutil
 
+# ask TA which group they'd like to grade
+groupNum = int(input("What group # would you like to mark? " ))
+
 ### constants setup ###
 # name of the group the TA needs to mark
 # format is "Marking Group X", replace X with a number
-groupNeedtoBeMarked = "Marking Group 2"
+groupNeedtoBeMarked = "Marking Group " + str(groupNum)
 
 # name of the file storing the group info
 # download this at Canvas Course side bar > People >
@@ -59,6 +62,9 @@ else :
             # go through the file list and find those with a matching Canvas ID
             for file in fileList:
                 canvasIDinFile = file.split("_")[1]
+                # if it is a late submission, the second item is "LATE" instead of Canvas ID
+                if canvasIDinFile == "LATE":
+                    canvasIDinFile = file.split("_")[2] #update to the third item
                 if canvasIDinFile == canvasID :
                     print("Copying... " + file)
                     shutil.copy(sourceDir+separator+file, destDir+separator+file)
