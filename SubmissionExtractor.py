@@ -15,13 +15,13 @@ groupNum = int(input("What group # would you like to mark? " ))
 ### constants setup ###
 # name of the group the TA needs to mark
 # format is "Marking Group X", replace X with a number
-groupNeedtoBeMarked = "Marking Group " + str(groupNum)
+groupNeedtoBeMarked = "For Marking Purposes Only " + str(groupNum)
 
 # name of the file storing the group info
 # download this at Canvas Course side bar > People >
 #   Select the group tab "For Marking Purposes Only" >
 #   + Import > Download Course Roster CVS from the bottom
-groupInfoFilename = "CMPT 120 - Group Export.csv"
+groupInfoFilename = "For Marking Purposes Only.csv"
 
 separator = os.path.sep #os specific file separator
 

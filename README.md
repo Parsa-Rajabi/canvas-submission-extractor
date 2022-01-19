@@ -5,7 +5,7 @@ This script looks up student Canvas IDs from a file and copy submission files wi
 
 ## Steps:
 1. download it to a directory (best if there is nothing else in it)
-2. download the group assignment (Refer to below on how to do so), rename it to `CMPT 120 - Group Export.csv`
+2. download the group assignment (Refer to below on how to do so), rename it to `For Marking Purposes Only.csv`
 3. download the submissions, unzip them, put them in a directory called `submissions` (note all lowercase) next to the script
 4. open the script with IDLE, update line 15 to match with the group you are marking
 5. run the script, a directory with the group name will be created and all the files that needed to be marked will be copied there
@@ -27,16 +27,19 @@ This script looks up student Canvas IDs from a file and copy submission files wi
 3. Select the group tab "For Marking Purposes Only" 
 4. Select "+ Import" 
 5. Download Course Roster CVS from the bottom
-6. Rename it to `CMPT 120 - Group Export.csv`
+6. Rename it to `For Marking Purposes Only.csv`
 
 ![image](https://user-images.githubusercontent.com/34695166/133945597-a07e2d3a-4c5f-4bcf-be6b-10cbf671f08d.png)
 
 
-## Constants 
-Name of the group the TA needs to mark format is "Marking Group X", replace X with a number
-```
-groupNeedtoBeMarked = "Marking Group 2"
-```
+## Run Script
+1. Open up terminal or any other Python IDE.
+2. `python3 SubmissionExtractor.py`
+3. Follow prompts
+
+## Errors
+- Make sure your CVS file is renamed properly 
+- Make sure you don't have any marking group folders 
 
 ## Credits
 - Author: Dr. Victor Cheung
