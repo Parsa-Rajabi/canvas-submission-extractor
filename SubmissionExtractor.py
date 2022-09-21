@@ -35,8 +35,10 @@ destDir = "." + separator + groupNeedtoBeMarked
 
 if os.path.exists(destDir) :
     print("Directory/File " + destDir +" already exists, remove it first.")
+# else:
+    # print("Creating directory in " + destDir)
 
-else :
+else:
     # create the directory to store the extracted files
     os.makedirs(destDir, mode = 0o777, exist_ok = True)
 
@@ -54,17 +56,22 @@ else :
     # for each line, get the group number and ID (Canvas ID, not SFU ID)
     for student in groupInfoFile :
         items = student.strip().split(",") #note: each name has a comma too...
-        groupNumber = items[6] #retrieve which group the student belongs to
+        groupNumber = items[5] #retrieve which group the student belongs to
         canvasID = items[2] #retrieve the Canvas ID
-        #print("reading student at " + groupNumber + " " + canvasID)
+        # for debugging only
+        # print("reading student at " + groupNumber + " " + canvasID)
+        # print("canvasID is " + canvasID)
+        # print("groupNumber is " + groupNumber)
+        # print("groupNeedtoBeMarked is " + groupNeedtoBeMarked)
 
         if groupNumber == groupNeedtoBeMarked :
             # go through the file list and find those with a matching Canvas ID
             for file in fileList:
                 canvasIDinFile = file.split("_")[1]
+                # print("canvasIDinFile is " + canvasIDinFile)
                 # if it is a late submission, the second item is "LATE" instead of Canvas ID
                 if canvasIDinFile == "LATE":
-                    canvasIDinFile = file.split("_")[2] #update to the third item
+                    canvasIDinFile = file.split("_")[4] #update to the third item
                 if canvasIDinFile == canvasID :
                     print("Copying... " + file)
                     shutil.copy(sourceDir+separator+file, destDir+separator+file)
