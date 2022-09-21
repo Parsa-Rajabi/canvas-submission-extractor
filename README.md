@@ -12,12 +12,23 @@ This script looks up student Canvas IDs from a file and copy submission files wi
 
 ## How to Download Group CSV + Submissions
 ### Submissions
+
+#### Option A
+1. Canvas Course
+2. Assignment 
+3. Find exercise that needs to be marked
+5. Select "Download Submission" from the bar on the right
+6. Extract zip file into a new folder
+7. Rename folder to `submissions`
+
+#### Option B
 1. Canvas Course
 2. Grade
 3. Find exercise that needs to be marked
 4. Select the triple dots beside it (screen below)
-5. Select Download Submission
-6. Rename to `submissions`
+5. Select "Download Submission"
+6. Extract zip file into a new folder
+7. Rename folder to `submissions`
 
 ![image](https://user-images.githubusercontent.com/34695166/133945658-82f96a13-7103-4fc3-8032-ca6e9124dd48.png)
 
